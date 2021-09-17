@@ -30,7 +30,7 @@ $registry->load_registry_from_db(
 my $slice_adaptor = $registry->get_adaptor( 'Human', 'Core', 'Slice' );
 
 #Obtain a slice covering the region from 1MB to 2MB (inclusively) of
-#chromosome 20 25000 to 30000
+#chromosome 10 25000 to 30000
 $slice = $slice_adaptor->fetch_by_region('chromosome', '10', 25000, 30000);
 
 #Print statement to output results method 1
